@@ -1,12 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Frontend contest 2</title>
 </head>
+
 <body>
-    <h1>Today contest is make static navbar</h1>
+    <div id="navbar">
+        <a href="#home">Home</a>
+        <a href="#books">Books</a>
+        <a href="#registerid">Register</a>
+    </div>
+
+    <div class="container">
+        <div id="booksid" class="books-container">
+            <h1 class="heading">Books</h1>
+            <table id="books">
+                <thead>
+                    <tr>
+                        <th>Book ID</th>
+                        <th>Title (with nested table)</th>
+                        <th>Author</th>
+                        <th>Genre</th>
+                        <th>Availability</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            The Great Gatsby
+                            <table class="nested-table">
+                                <tr>
+                                    <td>Publication Date:</td>
+                                    <td>April 10, 1925</td>
+                                </tr>
+                                <tr>
+                                    <td>Page Count:</td>
+                                    <td>180</td>
+                                </tr>
+                                <tr>
+                                    <td>ISBN:</td>
+                                    <td>978-0-7432-7356-5</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>F. Scott Fitzgerald</td>
+                        <td>Fiction</td>
+                        <td>Available</td>
+                    </tr>
+                   
+                    <tr>
+                        <td>2</td>
+                        <td>
+                            1984
+                            <table class="nested-table">
+                                <tr>
+                                    <td>Publication Date:</td>
+                                    <td>June 8, 1949</td>
+                                </tr>
+                                <tr>
+                                    <td>Page Count:</td>
+                                    <td>328</td>
+                                </tr>
+                                <tr>
+                                    <td>ISBN:</td>
+                                    <td>978-0-451-52493-5</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>George Orwell</td>
+                        <td>Fiction</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            Pride and Prejudice
+                            <table class="nested-table">
+                                <tr>
+                                    <td>Publication Date:</td>
+                                    <td>January 28, 1813</td>
+                                </tr>
+                                <tr>
+                                    <td>Page Count:</td>
+                                    <td>432</td>
+                                </tr>
+                                <tr>
+                                    <td>ISBN:</td>
+                                    <td>978-1-59308-355-5</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>Jane Austen</td>
+                        <td>Fiction</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>
+                            The Catcher in the Rye
+                            <table class="nested-table">
+                                <tr>
+                                    <td>Publication Date:</td>
+                                    <td>July 16, 1951</td>
+                                </tr>
+                                <tr>
+                                    <td>Page Count:</td>
+                                    <td>234</td>
+                                </tr>
+                                <tr>
+                                    <td>ISBN:</td>
+                                    <td>978-0-316-76953-6</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>J.D. Salinger</td>
+                        <td>Fiction</td>
+                        <td>Unavailable</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>
+                            To Kill a Mockingbird
+                            <table class="nested-table">
+                                <tr>
+                                    <td>Publication Date:</td>
+                                    <td>July 11, 1960</td>
+                                </tr>
+                                <tr>
+                                    <td>Page Count:</td>
+                                    <td>281</td>
+                                </tr>
+                                <tr>
+                                    <td>ISBN:</td>
+                                    <td>978-0-446-31078-9</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>Harper Lee</td>
+                        <td>Fiction</td>
+                        <td>Available</td>
+                    </tr>
+                </tbody>
+                    
+                  
+
+            </table>
+        </div>
+        <div id="registerid" class="register-container">
+            <h1 class="heading">Register</h1>
+            <div class="first-name">
+                <label for="fname">First Name:</label><br>
+                <input class="input" type="text">
+            </div>
+
+            <div class="last-name">
+                <label for="lname">Last Name:</label><br>
+                <input class="input" type="text">
+            </div>
+
+            <div class="dob">
+                <label for="db">Date Of Birth:</label><br>
+                <input class="input" type="date">
+            </div>
+
+            <div class="age">
+                <label for="age">Age:</label><br>
+                <input class="input" type="text">
+            </div>
+
+            <div class="email">
+                <label for="eml">Email:</label><br>
+                <input class="input" type="email">
+            </div>
+
+            <div class="password">
+                <label for="pass">Password:</label><br>
+                <input class="input" type="password">
+            </div>
+
+            <div class="cpassword">
+                <label for="cpass">Confirm Password:</label><br>
+                <input class="input" type="password">
+            </div>
+
+            <br>
+            <div class="reg">
+                <button class="input btn">Register</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="cointainer1" id="cointainer1">
+        <h2>Books</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Book ID</th>
+                    <th>Title (with nested table)</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Availability</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        The Great Gatsby
+                        <table class="nested-table">
+                            <tr>
+                                <td>Publication Date:</td>
+                                <td>April 10, 1925</td>
+                            </tr>
+                            <tr>
+                                <td>Page Count:</td>
+                                <td>180</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN:</td>
+                                <td>978-0-7432-7356-5</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>F. Scott Fitzgerald</td>
+                    <td>Fiction</td>
+                    <td>Available</td>
+                </tr>
+               
+                <tr>
+                    <td>2</td>
+                    <td>
+                        1984
+                        <table class="nested-table">
+                            <tr>
+                                <td>Publication Date:</td>
+                                <td>June 8, 1949</td>
+                            </tr>
+                            <tr>
+                                <td>Page Count:</td>
+                                <td>328</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN:</td>
+                                <td>978-0-451-52493-5</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>George Orwell</td>
+                    <td>Fiction</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>
+                        Pride and Prejudice
+                        <table class="nested-table">
+                            <tr>
+                                <td>Publication Date:</td>
+                                <td>January 28, 1813</td>
+                            </tr>
+                            <tr>
+                                <td>Page Count:</td>
+                                <td>432</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN:</td>
+                                <td>978-1-59308-355-5</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>Jane Austen</td>
+                    <td>Fiction</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>
+                        The Catcher in the Rye
+                        <table class="nested-table">
+                            <tr>
+                                <td>Publication Date:</td>
+                                <td>July 16, 1951</td>
+                            </tr>
+                            <tr>
+                                <td>Page Count:</td>
+                                <td>234</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN:</td>
+                                <td>978-0-316-76953-6</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>J.D. Salinger</td>
+                    <td>Fiction</td>
+                    <td>Unavailable</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>
+                        To Kill a Mockingbird
+                        <table class="nested-table">
+                            <tr>
+                                <td>Publication Date:</td>
+                                <td>July 11, 1960</td>
+                            </tr>
+                            <tr>
+                                <td>Page Count:</td>
+                                <td>281</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN:</td>
+                                <td>978-0-446-31078-9</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>Harper Lee</td>
+                    <td>Fiction</td>
+                    <td>Available</td>
+                </tr>
+            </tbody>
+    </div> -->
+
+
+
+    <script src="script.js"></script>
 </body>
+
 </html>
